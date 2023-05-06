@@ -1,0 +1,37 @@
+
+
+import UIKit
+
+enum EndPoints: String ,CaseIterable {
+    case register = "services/register.php"
+    case login = "services/login.php"
+    case updateProfile = "services/uploadProfile.php"
+    case deleteAccount = "services/deleteUser.php"
+    case resetPassword = "services/resetPassword.php"
+    case scores = "zqbf-list-page"
+    case scores_past_future = "zqbf-list-past-result"
+    case scores_index = "zqbf-live-odds"
+    case scores_analysis = "zqbf-match-analysis"
+    case scores_events = "zqbf-list-event"
+    case scores_briefing = "zqbf-match-briefing-en"
+    case scores_league = "zqbf-list-league"
+    case matchDetails = "zqbf-list-match"
+    case basketball_scores = "lqbf-list"
+    case basketball_index = "lqbf-live-odds"
+    case basketball_past_future = "lqbf-list-past-result"
+    case basketball_analysis = "lqbf-match-analysis"
+    case basketball_league = "lqbf-list-league"
+    case basketball_briefing = "lqbf-match-briefing"
+    case basketball_match_details = "lqbf-list-match"
+    case newsList = "post-list"
+    case videoList = "video-list"
+    case newsDetails = "post"
+    case teamStandings = "zqbf-list-jifen"
+    case playerStandings = "zqbf-list-jifen-top-scorer"
+    case lineupPreview = "zqbf-list-lineup-preview"
+    case linup = "zqbf-list-lineup"
+    case esportsList = "live-matches/esport"
+    case esportsLeagues = "live-matches/leagues/sport/"
+    case esportsMatchDetail = "live-matches/match/"
+    case match = "match.php"
+}

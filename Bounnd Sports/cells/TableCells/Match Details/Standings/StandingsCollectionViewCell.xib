@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTProBlack.otf">
+            <string>AvenirLTPro-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StandingsCollectionViewCell" id="gTV-IL-0wX" customClass="StandingsCollectionViewCell" customModule="Bounnd_Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-kD-YHO">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZu-mN-tX4">
+                                <rect key="frame" x="62" y="50" width="34.333333333333343" height="16.333333333333329"/>
+                                <fontDescription key="fontDescription" name="AvenirLTPro-Black" family="Avenir LT Pro" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RZu-mN-tX4" firstAttribute="centerY" secondItem="5ns-kD-YHO" secondAttribute="centerY" id="FQU-5b-kLZ"/>
+                            <constraint firstItem="RZu-mN-tX4" firstAttribute="centerX" secondItem="5ns-kD-YHO" secondAttribute="centerX" id="whu-Kx-LN6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5ns-kD-YHO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F0m-hD-rkm"/>
+                <constraint firstAttribute="trailing" secondItem="5ns-kD-YHO" secondAttribute="trailing" id="W9C-KL-5Qu"/>
+                <constraint firstAttribute="bottom" secondItem="5ns-kD-YHO" secondAttribute="bottom" id="g2b-ki-dxp"/>
+                <constraint firstItem="5ns-kD-YHO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gw8-Su-uPH"/>
+            </constraints>
+            <size key="customSize" width="158" height="116"/>
+            <connections>
+                <outlet property="titleLable" destination="RZu-mN-tX4" id="O9o-RR-Slk"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="43.661971830985919"/>
+        </collectionViewCell>
+    </objects>
+</document>

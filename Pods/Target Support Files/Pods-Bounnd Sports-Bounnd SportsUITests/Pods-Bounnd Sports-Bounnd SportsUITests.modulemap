@@ -1,0 +1,6 @@
+framework module Pods_Bounnd_Sports_Bounnd_SportsUITests {
+  umbrella header "Pods-Bounnd Sports-Bounnd SportsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

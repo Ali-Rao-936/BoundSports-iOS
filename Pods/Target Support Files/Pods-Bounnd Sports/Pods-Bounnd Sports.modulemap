@@ -1,0 +1,6 @@
+framework module Pods_Bounnd_Sports {
+  umbrella header "Pods-Bounnd Sports-umbrella.h"
+
+  export *
+  module * { export * }
+}

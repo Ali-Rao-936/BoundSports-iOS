@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherMatchesTableVC" rowHeight="171" id="KGk-i7-Jjw" customClass="OtherMatchesTableVC" customModule="Bounnd_Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="171"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0E-TO-t3z">
+                        <rect key="frame" x="16" y="20" width="346" height="151"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNU-un-51g">
+                                <rect key="frame" x="0.0" y="0.0" width="121.33333333333333" height="61"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" name="PrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3nM-HB-ulu">
+                                <rect key="frame" x="0.0" y="71" width="346" height="80"/>
+                                <color key="backgroundColor" name="BgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iU4-sA-e5N"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No more matches for today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xk5-tI-hWw">
+                                <rect key="frame" x="46" y="101" width="254" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BgColor"/>
+                        <constraints>
+                            <constraint firstItem="3nM-HB-ulu" firstAttribute="leading" secondItem="a0E-TO-t3z" secondAttribute="leading" id="68q-fN-hwn"/>
+                            <constraint firstItem="xk5-tI-hWw" firstAttribute="centerX" secondItem="a0E-TO-t3z" secondAttribute="centerX" id="Hgw-n0-DzP"/>
+                            <constraint firstItem="UNU-un-51g" firstAttribute="top" secondItem="a0E-TO-t3z" secondAttribute="top" id="MnL-JK-H3B"/>
+                            <constraint firstAttribute="bottom" secondItem="3nM-HB-ulu" secondAttribute="bottom" id="Tpz-xY-hxR"/>
+                            <constraint firstItem="UNU-un-51g" firstAttribute="leading" secondItem="a0E-TO-t3z" secondAttribute="leading" id="ZuJ-7f-cM8"/>
+                            <constraint firstItem="3nM-HB-ulu" firstAttribute="top" secondItem="UNU-un-51g" secondAttribute="bottom" constant="10" id="cLE-Sj-5WE"/>
+                            <constraint firstAttribute="trailing" secondItem="3nM-HB-ulu" secondAttribute="trailing" id="gMY-zs-fx4"/>
+                            <constraint firstItem="xk5-tI-hWw" firstAttribute="top" secondItem="UNU-un-51g" secondAttribute="bottom" constant="40" id="oKQ-wZ-OGg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="BgColor"/>
+                <constraints>
+                    <constraint firstItem="a0E-TO-t3z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="APa-gR-9Um"/>
+                    <constraint firstItem="a0E-TO-t3z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cx4-P0-Inj"/>
+                    <constraint firstAttribute="bottom" secondItem="a0E-TO-t3z" secondAttribute="bottom" id="Hh4-Bo-hW9"/>
+                    <constraint firstAttribute="trailing" secondItem="a0E-TO-t3z" secondAttribute="trailing" constant="16" id="r7D-kA-fy6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="BgColor"/>
+            <connections>
+                <outlet property="noMatches" destination="xk5-tI-hWw" id="reJ-am-XDi"/>
+                <outlet property="tableView" destination="3nM-HB-ulu" id="feK-rt-7WB"/>
+                <outlet property="tableViewHeight" destination="iU4-sA-e5N" id="Hy7-KS-g51"/>
+            </connections>
+            <point key="canvasLocation" x="204.58015267175571" y="14.43661971830986"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BgColor">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.2627450980392157" green="0.60392156862745094" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
